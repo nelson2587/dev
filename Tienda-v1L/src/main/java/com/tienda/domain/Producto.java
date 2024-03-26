@@ -20,7 +20,7 @@ public class Producto implements Serializable { //serializacion porque se va alm
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Los valores generados que estrategia usan, identico a la BD 
     @Column(name = "id_producto") //decir cual es el nombre en la base de datos. Se hace la asociación 
     private long idProducto;
-    private long idCategoria;
+    //private long idCategoria;
     private String descripcion;
     private String detalle;
     private double precio;
@@ -28,6 +28,7 @@ public class Producto implements Serializable { //serializacion porque se va alm
     private String rutaImagen;
     private boolean activo;
 
+   
     public Producto() {
     }
 
@@ -35,9 +36,4 @@ public class Producto implements Serializable { //serializacion porque se va alm
         this.descripcion = descripcion;
         this.activo = activo;
     }
-
-    public boolean isActivo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-}
